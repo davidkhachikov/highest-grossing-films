@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-Grossing Films</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="filter-section">
+            <h3>Directors</h3>
+            <div id="director-filters" class="scrollable-list"></div>
+        </div>
+        <div class="filter-section">
+            <h3>Countries</h3>
+            <div id="country-filters" class="scrollable-list"></div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <input type="text" id="search" class="search-box" placeholder="Search by title...">
+        <table id="filmsTable">
+            <thead>
+                <tr>
+                    <th data-sort="title">Title</th>
+                    <th data-sort="release_year">Year</th>
+                    <th>Director(s)</th>
+                    <th data-sort="box_office">Box Office ($)</th>
+                    <th>Countries</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
